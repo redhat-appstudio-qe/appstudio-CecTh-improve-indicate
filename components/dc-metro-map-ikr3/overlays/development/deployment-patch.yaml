@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-ikr3
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/happy-path-jhxb-tenant/appstudio/dc-metro-map-ikr3@sha256:01f9b586ffd370f16e0469299033accc5ebdc41f27bd82c977319cb3bcfc226c
+        name: my-nodejs
+        resources: {}
+status: {}
